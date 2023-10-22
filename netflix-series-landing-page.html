@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Most Watched Netflix Series</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(242, 235, 243) 0%,
+          rgb(234, 241, 249) 90.1%
+        );
+      }
+      h1 {
+        font-family: monospace;
+        text-align: center;
+      }
+      h2 {
+        font-size: 15px;
+        font-family: monospace;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+      }
+      .bridgerton-div {
+        font-family: monospace;
+        float: left;
+        width: 33.333%;
+        margin: 0 auto;
+      }
+      .lcdp-div {
+        font-family: monospace;
+        display: inline-block;
+        width: 33.333%;
+        margin: 0 auto;
+      }
+      .st3-div {
+        font-family: monospace;
+        float: right;
+        width: 33.333%;
+        display: inline-block;
+      }
+      p {
+        font-size: 10px;
+      }
+
+      .bridgerton-link,
+      .lcdp-link,
+      .st3-link,
+      .sg-link {
+        font-size: 10px;
+        font-weight: bold;
+      }
+
+      .sg-div {
+        margin: 30px auto;
+        text-align: center;
+        font-family: monospace;
+      }
+      button {
+        display: block;
+        margin: 0px auto 10px auto;
+        padding: 20px;
+        font-family: monospace;
+        border-radius: 35px;
+        border: thin;
+        background: rgba(237, 177, 241, 0.3);
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        cursor: pointer;
+        background: transparent;
+      }
+      .coded {
+        text-align: center;
+        font-weight: lighter;
+        font-family: monospace;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>
+        Netflix revealed the Top 10 Most Watched Series in its HISTORY!
+      </strong>
+    </h1>
+    <br />
+    <div class="bridgerton-div">
+      <h2 class="bridgerton">1. Bridgerton <br />- 628M views</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/095/original/bridgerton.jpg?1633137305"
+      />
+      <p class="bridgerton-p">
+        <em>
+          During the Regency era in England, eight close-knit siblings of the
+          powerful Bridgerton family attempt to find love.
+        </em>
+      </p>
+      <div class="bridgerton-link">
+        Click
+        <a href="https://en.wikipedia.org/wiki/Bridgerton" target="_blank">
+          here</a
+        >
+        to find out more about Bridgerton!
+      </div>
+    </div>
+    <div class="lcdp-div">
+      <h2 class="lcdp">
+        2. La Casa De Papel/Money Heist S4 <br />
+        - 625M views
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/096/original/lcdp.jpeg?1633138698"
+      />
+      <p class="lcdp-p">
+        <em>
+          A criminal mastermind who goes by "The Professor" has a plan to pull
+          off the biggest heist in recorded history -- to print billions of
+          euros in the Royal Mint of Spain. To help him carry out the ambitious
+          plan, he recruits eight people with certain abilities and who have
+          nothing to lose. The group of thieves take hostages to aid in their
+          negotiations with the authorities, who strategize to come up with a
+          way to capture The Professor. As more time elapses, the robbers
+          prepare for a showdown with the police.
+        </em>
+      </p>
+      <div class="lcdp-link">
+        Click
+        <a href="https://en.wikipedia.org/wiki/Money_Heist" target="_blank">
+          here
+        </a>
+        to find out more about La Casa De Papel!
+      </div>
+    </div>
+    <div class="st3-div">
+      <h2 class="st3">
+        3. Stranger Things S3
+        <br />
+        - 528M views
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/097/original/st3.jpeg?1633139361"
+      />
+      <p class="st3-p">
+        <em>
+          In 1980s Indiana, a group of young friends witness supernatural forces
+          and secret government exploits. As they search for answers, the
+          children unravel a series of extraordinary mysteries.
+        </em>
+      </p>
+      <div class="st3-link">
+        Click
+        <a href="https://en.wikipedia.org/wiki/Stranger_Things" target="_blank">
+          here
+        </a>
+        to find out more about Stranger Things!
+      </div>
+    </div>
+    <br />
+    <div class="sg-div">
+      <h2>
+        According to Netflix, Squid Game, a Korean show, is taking the world by
+        storm and is on track to become the most watched Netflix show 🦑
+      </h2>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/115/original/sg.jpeg?1633185064"
+      />
+      <br />
+      <p class="sg-p">
+        <em>
+          Hundreds of cash-strapped contestants accept an invitation to compete
+          in children's games for a tempting prize, but the stakes are deadly.
+        </em>
+      </p>
+      <div class="sg-link">
+        Click
+        <a href="https://en.wikipedia.org/wiki/Squid_Game" target="_blank">
+          here
+        </a>
+        to find out more about Squid Game!
+      </div>
+    </div>
+    <br />
+    <button>Need some recommendations?</button>
+    <script>
+      function giveRecommendation() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            "Thank you " +
+              name +
+              ", watch out for new recommendations! In the meantime, happy Netflixing! 🍿"
+          );
+        } else {
+          alert(
+            "Sorry, we need your full details to send you recommendations 😕"
+          );
+        }
+      }
+
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", giveRecommendation);
+    </script>
+    <br />
+    <p class="coded">Coded by Nuria Shafqat</p>
+  </body>
+</html>
